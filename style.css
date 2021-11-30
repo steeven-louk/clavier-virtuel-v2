@@ -71,3 +71,29 @@ ul li:hover {
   border: 4px solid greenyellow;
   color: greenyellow;
 }
+
+#lock{
+    position: relative;
+}
+#lock::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(182, 182, 182);
+    right: 3px;
+    outline: #fff;
+}
+
+.caps::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    right: 4px;
+    background: rgb(2, 236, 2);
+    outline: green;
+}
