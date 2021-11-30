@@ -10,6 +10,11 @@
   font-family: "Lato", sans-serif;
 }
 
+.capitalise{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
 .dark-mode {
   background-color: #000;
   color: #fff;

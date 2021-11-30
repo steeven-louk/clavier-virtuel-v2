@@ -35,43 +35,43 @@
 
             <ul class="row1">
                 <li>tab</li>
-                <li>a</li>
-                <li>z</li>
-                <li>e</li>
-                <li>r</li>
-                <li>t</li>
-                <li>y</li>
-                <li>u</li>
-                <li>i</li>
-                <li>o</li>
-                <li>p</li>
+                <li class="lettre">a</li>
+                <li class="lettre">z</li>
+                <li class="lettre">e</li>
+                <li class="lettre">r</li>
+                <li class="lettre">t</li>
+                <li class="lettre">y</li>
+                <li class="lettre">u</li>
+                <li class="lettre">i</li>
+                <li class="lettre">o</li>
+                <li class="lettre">p</li>
                 <li>{</li>
                 <li>}</li>
                 <li>*</li>
             </ul>
             <ul class="row1">
                 <li id="lock"><i class="fa fa-lock" aria-hidden="true"></i> </li>
-                <li>q</li>
-                <li>s</li>
-                <li>d</li>
-                <li>f</li>
-                <li>g</li>
-                <li>h</li>
-                <li>j</li>
-                <li>k</li>
-                <li>l</li>
-                <li>m</li>
+                <li class="lettre">q</li>
+                <li class="lettre">s</li>
+                <li class="lettre">d</li>
+                <li class="lettre">f</li>
+                <li class="lettre">g</li>
+                <li class="lettre">h</li>
+                <li class="lettre">j</li>
+                <li class="lettre">k</li>
+                <li class="lettre">l</li>
+                <li class="lettre">m</li>
                 <li>"</li>
                 <li id="entrer">entrer</li>
             </ul>
             <ul class="row1">
                 <li id="shift"><i class="fa fa-arrow-up" aria-hidden="true"></i></li>
-                <li>w</li>
-                <li>x</li>
-                <li>c</li>
-                <li>v</li>
-                <li>b</li>
-                <li>n</li>
+                <li class="lettre">w</li>
+                <li class="lettre">x</li>
+                <li class="lettre">c</li>
+                <li class="lettre">v</li>
+                <li class="lettre">b</li>
+                <li class="lettre">n</li>
                 <li>,</li>
                 <li>;</li>
                 <li>?</li>
@@ -105,6 +105,9 @@
             $("body").toggleClass('dark-mode');
             $("li").toggleClass('dark-mode');
           });
+          $("#lock").click(function(){
+              $(".lettre").toggleClass('capitalise')
+          })
         })
     </script>
 </body>
