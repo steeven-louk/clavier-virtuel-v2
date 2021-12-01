@@ -9,13 +9,13 @@
     <title>clavier-virtuel</title>
 </head>
 <body>
+
     <div class="container">
-        <div class="text" style="margin-bottom: 15px;">
+        <div class="text-area">
             <textarea name="" id="" cols="100" rows="10"></textarea>
-            <button >mode</button>
         </div>
                 <ul class="row1">
-                    <li style="width: 10px; justify-content:center">&</li>
+                    <li id="mode" style="width: 10px;position:relative"><i style="position:absolute;left:8px;color:rgb(255, 153, 0)" class="fas fa-sun"></i></li>
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -101,7 +101,7 @@
 
     <script>
         $(function(){
-          $("button").click(function(){
+          $("#mode").click(function(){
             $("body").toggleClass('dark-mode');
             $("li").toggleClass('dark-mode');
           });
